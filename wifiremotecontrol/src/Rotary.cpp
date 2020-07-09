@@ -130,6 +130,7 @@ Rotary::Rotary(char _pin1, char _pin2) {
   // Set pins to input.
   pinMode(pin1, INPUT_PULLUP);
   pinMode(pin2, INPUT_PULLUP);
+#define ENABLE_PULLUPS
 #ifdef ENABLE_PULLUPS
   digitalWrite(pin1, HIGH);
   digitalWrite(pin2, HIGH);
